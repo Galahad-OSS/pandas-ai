@@ -10,7 +10,7 @@ class BaseRestrictedModule:
             #         raise SecurityError(
             #             f"Potential security risk: '{arg}' is not allowed"
             #         )
-            # return func(*args, **kwargs)
+            return func(*args, **kwargs)
 
         return wrapper
 
